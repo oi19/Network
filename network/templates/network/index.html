@@ -1,0 +1,98 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+
+{% if request.user.is_authenticated %}
+<div class="container">
+    <div class="title">Home</div>
+    <!-- posting container -->
+    <div id="post-sub">
+        <form id="post-form">
+            {% csrf_token %}
+            <!-- <label>New Post</label> -->
+            <textarea name="post" class="text-post" cols="30" rows="2" placeholder="What's happening "></textarea>
+            <button type="submit" class="post-button"> Post</button>
+        </form>
+
+    </div>
+    <!-- <div class="title">Home</div> -->
+    <div class="user-container" style="display: none;">
+
+        <div class="image-follow">
+            <div class="image-container"><img class="image" src="static/network/images/ok.jpeg"></div>
+            <button class="follow-unfollow"></button>
+        </div>
+        <h5>
+            <bold class="user-username"></bold>
+        </h5>
+        <h6 class="user-username2"></h6>
+        <h6 class="joined-date"></h6>
+        <div class="ff">
+            <h6 ><bold class="followingNum"></bold></bold>Following</h6>
+            <h6 ><bold class="followersNum"></bold>Followers</h6>
+        </div>
+
+
+    </div>
+    <div class="post-container">
+        <!-- <div class="post">
+            <a >
+                <h6 class="username">request.username</h6>
+            </a>
+            <button class="edit-button">Edit</button>
+            <textarea class="post-text-edit" rows="1"
+                readonly>Hello! This is a reconmmendation letter for your interview</textarea>
+            <h6>date</h6>
+            <div class="likes-container">
+               
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" id="svg" height="20" fill="currentColor" class="bi bi-heart"
+                    viewBox="0 0 20 20">
+                    
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                        
+                </svg>
+                <i class="fas fa-heart" id="heart" style="display: none;"></i> -->
+                
+
+                
+               
+                <!-- <img src="static/network/images/f.png"> -->
+
+                
+                <!-- <h6 class="likes-num">55</h6>
+
+            </div>
+
+            <lable>comment</lable>
+
+        </div> -->
+       
+
+
+        
+
+
+    </div>
+    <div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item ">
+                        <button class="page-link" id="previous"  tabindex="-1" disabled>Previous</button>
+                    </li>
+                    <li class="page-item"><button class="page-link" id="page-num" >1</button></li>
+                    <li class="page-item">
+                        <button class="page-link" id="next">Next</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+</div>
+
+
+
+{% endif %}
+{% endblock %}
+<!-- {% block script %}
+<script src="static/network/assets/js/main.js"></script>
+{% endblock%} -->
