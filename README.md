@@ -1,5 +1,5 @@
 # Network 
-## Network is twitter alike Web App powered by [Django](https://www.djangoproject.com/). In this platform, readers can search for posts(tweets/articles) arbitrarily , write thier thoughts and post it and many more features such as . 
+## Network is twitter alike Web App powered by [Django](https://www.djangoproject.com/) using . In this platform, readers can search for posts(tweets/articles) arbitrarily , write thier thoughts and post it and many more features such as . 
   - All posts aka timeline is available
   - Profile page :which containes personal inforamtion  and the option to follow and unfollow , in addition to all posts of that user
   - Edit Post: user can edit only thier own posts
@@ -11,16 +11,16 @@
 
 ## HTML Files
 
- - index page (include all classes)
-   - this page has all available gym classes with the number of the people joined to that each class as well as each class's trainer's name 
+ - index.html 
+   - this page has new feeds (posts) of all users theirs included as well the ability to navigate to other pages 
       
- - user page(include user infomation)
+ - user.html
    -  this page has the information about the user , thier likes, posts, username,conatct info and comments 
  
- - login page:-
+ - login.html:-
    - user has to login in order to participate in  any class 
  
- - Register page:-
+ - Register.html:-
    - a page in which a user with no previous interaction with this site has to register to be able to use this website
   
 
