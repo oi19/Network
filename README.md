@@ -1,5 +1,6 @@
-# Network 
-## Network is twitter alike Web App powered by [Django](https://www.djangoproject.com/) using [Python](https://www.python.org/) . In this platform, readers can search for posts(tweets/articles) arbitrarily , write thier thoughts and post it and many more features such as . 
+# Network ![Django](https://github.com/ESWZY/cs50web-final-project/workflows/Django%20CI/badge.svg)
+
+##  A Mobile Responsive twitter alike Web App powered by [Django](https://www.djangoproject.com/) using [Python](https://www.python.org/) . In this platform, readers can search for posts(tweets/articles) arbitrarily , write thier thoughts and post it and many more features such as . 
   - All posts aka timeline is available
   - Profile page :which containes personal inforamtion  and the option to follow and unfollow , in addition to all posts of that user
   - Edit Post: user can edit only thier own posts
